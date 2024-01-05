@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zadanie5._01._24.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label 
+                Text="Typy żartów: programming, general, knock-knock"/>
+            <Label 
+                x:Name="blad"/>
+            <Entry 
+                x:Name="typ"/>
+            <Label 
+                Text=""
+                x:Name="type"
+                FontSize="15"
+                BackgroundColor="DarkTurquoise"/>
+            <Label 
+                Text=""
+                x:Name="setup"
+                FontSize="15"
+                BackgroundColor="Aquamarine"/>
+            <Label 
+                Text=""
+                x:Name="punchline"
+                FontSize="15"
+                BackgroundColor="CadetBlue"/>
+            <Button 
+                Text="Generuj żart"
+                Clicked="generuj"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
